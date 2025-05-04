@@ -57,13 +57,13 @@ There are two ways to provide your API key:
 
 ```bash
 export GEMINI_API_KEY="your-api-key-here"
-python3 synthesis_assistant.py
+python3 main.py
 ```
 
 #### Option 2: Using command-line arguments
 
 ```bash
-python3 synthesis_assistant.py --api-key "your-api-key-here"
+python3 main.py --api-key "your-api-key-here"
 ```
 
 ## Usage
