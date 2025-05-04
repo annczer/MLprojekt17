@@ -118,14 +118,14 @@ def main():
                     print(f"{Fore.YELLOW}Conversation cleared. Chemist context maintained.{Style.RESET_ALL}")
                     continue
                 
-                print(f"{Fore.BLUE}Chemist: {Style.RESET_ALL}", end="")
+                print(f"{Fore.CYAN}Chemist: {Style.RESET_ALL}", end="")
                 
                 response = chat.send_message(user_input)
                 width = os.get_terminal_size().columns
                 for line in response.split('\n'):
                     wrapped_lines = textwrap.wrap(line, width=width) if line.strip() else ['']
                     for wrapped in wrapped_lines:
-                        print(f"{Fore.BLUE}{wrapped}{Style.RESET_ALL}")
+                        print(f"{Fore.CYAN}{wrapped}{Style.RESET_ALL}")
                 
             except KeyboardInterrupt:
                 print("\nExiting...")
